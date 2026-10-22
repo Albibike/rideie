@@ -33,56 +33,6 @@ export default function Home() {
       </section>
 
       <section className="pb-14">
-        <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">The time you get back</h2>
-        <div className="grid gap-4 rounded-2xl bg-stone-900 p-6 text-center text-white sm:grid-cols-3">
-          {[
-            { value: "2× faster", label: "than the metro, door to door" },
-            { value: "½ the time", label: "on your commute, wherever you live" },
-            { value: "0 min", label: "waiting for a train or a driver" },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <p className="text-3xl font-extrabold text-orange-400">{stat.value}</p>
-              <p className="mt-1 text-sm text-stone-300">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-        <p className="mt-2 text-center text-xs text-stone-500">
-          Example from our own daily ride: Salamanca to IE takes 45 min by metro and 20 min by scooter.
-        </p>
-      </section>
-
-      <section className="pb-14">
-        <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">Why ride?</h2>
-        <div className="grid gap-4 sm:grid-cols-3">
-          {[
-            {
-              icon: "🚇",
-              title: "No more metro",
-              text: "45 minutes packed and sweaty, and you never know if you'll make it on time. On a scooter, you're in control: you decide when you leave and when you arrive.",
-            },
-            {
-              icon: "🚕",
-              title: "No more Ubers",
-              text: "No paying for every ride, no waiting for a driver, no sitting in traffic. Your scooter is ready when you are.",
-            },
-            {
-              icon: "☀️",
-              title: "Enjoy the ride",
-              text: "Fresh air, the streets of Madrid, and you arrive awake. Your commute becomes the best part of the day.",
-            },
-          ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-stone-200 bg-white p-6">
-              <div className="mb-3 text-3xl" aria-hidden="true">
-                {item.icon}
-              </div>
-              <h3 className="text-lg font-bold">{item.title}</h3>
-              <p className="mt-1 text-stone-700">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="pb-16">
         <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">How it works</h2>
         <div className="grid gap-4 sm:grid-cols-3">
           {[
@@ -105,6 +55,56 @@ export default function Home() {
             <div key={item.step} className="rounded-2xl border border-stone-200 bg-white p-6">
               <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 font-bold text-white">
                 {item.step}
+              </div>
+              <h3 className="text-lg font-bold">{item.title}</h3>
+              <p className="mt-1 text-stone-700">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="pb-14">
+        <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">The time you get back</h2>
+        <div className="grid gap-4 rounded-2xl bg-stone-900 p-6 text-center text-white sm:grid-cols-3">
+          {[
+            { value: "2× faster", label: "than the metro, door to door" },
+            { value: "½ the time", label: "on your commute, wherever you live" },
+            { value: "0 min", label: "waiting for a train or a driver" },
+          ].map((stat) => (
+            <div key={stat.label}>
+              <p className="text-3xl font-extrabold text-orange-400">{stat.value}</p>
+              <p className="mt-1 text-sm text-stone-300">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-2 text-center text-xs text-stone-500">
+          Example from our own daily ride: Salamanca to IE takes 45 min by metro and 20 min by scooter.
+        </p>
+      </section>
+
+      <section className="pb-16">
+        <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">Why ride?</h2>
+        <div className="grid gap-4 sm:grid-cols-3">
+          {[
+            {
+              icon: "🚇",
+              title: "No more metro",
+              text: "45 minutes packed and sweaty, and you never know if you'll make it on time. On a scooter, you're in control: you decide when you leave and when you arrive.",
+            },
+            {
+              icon: "🚕",
+              title: "No more Ubers",
+              text: "No paying for every ride, no waiting for a driver, no sitting in traffic. Your scooter is ready when you are.",
+            },
+            {
+              icon: "☀️",
+              title: "Enjoy the ride",
+              text: "Fresh air, the streets of Madrid, and you arrive awake. Your commute becomes the best part of the day.",
+            },
+          ].map((item) => (
+            <div key={item.title} className="rounded-2xl border border-stone-200 bg-white p-6">
+              <div className="mb-3 text-3xl" aria-hidden="true">
+                {item.icon}
               </div>
               <h3 className="text-lg font-bold">{item.title}</h3>
               <p className="mt-1 text-stone-700">{item.text}</p>
