@@ -9,7 +9,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "RideIE: skip the metro, skip the Uber, ride to IE",
+  title: "RideIE: ride to uni faster, cheaper, and without the stress",
   description:
     "RideIE helps IE students get a scooter, paperwork included, so they reach class faster and on their own terms.",
 };

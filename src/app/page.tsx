@@ -9,10 +9,10 @@ export default function Home() {
           For IE students in Madrid
         </p>
         <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-          Skip the metro. Skip the Uber. Ride to class.
+          Ride to uni faster, cheaper, and without the stress.
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-stone-700">
-          Get your own 50cc or 125cc scooter and reach class faster, on your own schedule.
+          Get your own 50cc or 125cc scooter and come and go on your own schedule.
           We find it, handle all the paperwork, and buy it back when you graduate.
         </p>
         <Link
