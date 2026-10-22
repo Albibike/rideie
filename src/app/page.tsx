@@ -12,8 +12,11 @@ export default function Home() {
           Ride to uni faster, cheaper, and without the stress.
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-stone-700">
-          Get your own 50cc or 125cc scooter and come and go on your own schedule.
-          We find it, handle all the paperwork, and buy it back when you graduate.
+          Own a 50cc or 125cc scooter and ride it yourself, on your own schedule.
+          We find one for you to buy, handle all the paperwork, and buy it back when you graduate.
+        </p>
+        <p className="mx-auto mt-3 max-w-2xl text-sm font-semibold text-stone-800">
+          Not a rental. Not a ride with a driver. Your own scooter.
         </p>
         <Link
           href="/signup"
@@ -91,7 +94,7 @@ export default function Home() {
             {
               step: "2",
               title: "We find it",
-              text: "We search second-hand sites, check the scooter and do the paperwork. You track the status online.",
+              text: "We search second-hand sites, check the scooter and do the ownership paperwork. You buy it and it's yours. Track the status online.",
             },
             {
               step: "3",
