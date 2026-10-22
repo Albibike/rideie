@@ -33,9 +33,9 @@ export default function Home() {
         <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">The time you get back</h2>
         <div className="grid gap-4 rounded-2xl bg-stone-900 p-6 text-center text-white sm:grid-cols-3">
           {[
-            { value: "45 → 20 min", label: "metro vs scooter, each way" },
-            { value: "50 min", label: "saved every day" },
-            { value: "4 hours", label: "back every week" },
+            { value: "2× faster", label: "than the metro, door to door" },
+            { value: "½ the time", label: "on your commute, wherever you live" },
+            { value: "0 min", label: "waiting for a train or a driver" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="text-3xl font-extrabold text-orange-400">{stat.value}</p>
@@ -44,7 +44,7 @@ export default function Home() {
           ))}
         </div>
         <p className="mt-2 text-center text-xs text-stone-500">
-          Based on a typical 45-minute metro commute to IE and our own daily rides across Madrid.
+          Example from our own daily ride: Salamanca to IE takes 45 min by metro and 20 min by scooter.
         </p>
       </section>
 
