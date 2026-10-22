@@ -9,11 +9,11 @@ export default function Home() {
           For IE students in Madrid
         </p>
         <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-          Skip the metro. Get a scooter and reach class on time.
+          Skip the metro mess. Stop paying for Ubers.
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-stone-700">
-          Tell us what you need. We find you a 50cc or 125cc scooter, handle all the paperwork,
-          and buy it back when you graduate.
+          Get your own scooter and reach class on time. We find you a 50cc or 125cc scooter,
+          handle all the paperwork, and buy it back when you graduate.
         </p>
         <Link
           href="/signup"
