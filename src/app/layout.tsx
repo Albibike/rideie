@@ -9,9 +9,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "RideIE: get a scooter for your commute to IE",
+  title: "RideIE: skip the metro, skip the Uber, ride to IE",
   description:
-    "RideIE helps IE students get a 50cc or 125cc scooter, paperwork included, so they skip the metro and reach class on time.",
+    "RideIE helps IE students get a scooter, paperwork included, so they skip metro and Uber and arrive on time.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -9,11 +9,11 @@ export default function Home() {
           For IE students in Madrid
         </p>
         <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-          Ride past the traffic, the crowds and the Uber bills.
+          Skip the metro. Skip the Uber. Ride to class.
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-stone-700">
-          Get your own scooter and reach class on time, every day. We find you a 50cc or 125cc
-          scooter, handle the paperwork, and buy it back when you graduate.
+          Get your own 50cc or 125cc scooter. We find it, handle all the paperwork,
+          and buy it back when you graduate.
         </p>
         <Link
           href="/signup"
@@ -29,32 +29,66 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="grid gap-4 pb-16 sm:grid-cols-3">
-        {[
-          {
-            step: "1",
-            title: "Request",
-            text: "Write what you're looking for: 50cc or 125cc, budget, when you need it.",
-          },
-          {
-            step: "2",
-            title: "We find it",
-            text: "We search second-hand sites and check the scooter. You track the status online.",
-          },
-          {
-            step: "3",
-            title: "Ride, then sell back",
-            text: "We do the ownership paperwork. When you graduate, we buy it back.",
-          },
-        ].map((item) => (
-          <div key={item.step} className="rounded-2xl border border-stone-200 bg-white p-6">
-            <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 font-bold text-white">
-              {item.step}
+      <section className="pb-14">
+        <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">Why ride?</h2>
+        <div className="grid gap-4 sm:grid-cols-3">
+          {[
+            {
+              icon: "🚇",
+              title: "No more metro",
+              text: "45 minutes packed and sweaty, and you never know if you'll make it on time. On a scooter, you decide when you arrive.",
+            },
+            {
+              icon: "🚕",
+              title: "No more Ubers",
+              text: "No paying for every ride, no waiting for a driver, no sitting in traffic. Your scooter is ready when you are.",
+            },
+            {
+              icon: "☀️",
+              title: "Enjoy the ride",
+              text: "Fresh air, the streets of Madrid, and you arrive awake. Your commute becomes the best part of the day.",
+            },
+          ].map((item) => (
+            <div key={item.title} className="rounded-2xl border border-stone-200 bg-white p-6">
+              <div className="mb-3 text-3xl" aria-hidden="true">
+                {item.icon}
+              </div>
+              <h3 className="text-lg font-bold">{item.title}</h3>
+              <p className="mt-1 text-stone-700">{item.text}</p>
             </div>
-            <h2 className="text-lg font-bold">{item.title}</h2>
-            <p className="mt-1 text-stone-700">{item.text}</p>
-          </div>
-        ))}
+          ))}
+        </div>
+      </section>
+
+      <section className="pb-16">
+        <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">How it works</h2>
+        <div className="grid gap-4 sm:grid-cols-3">
+          {[
+            {
+              step: "1",
+              title: "Request",
+              text: "Tell us what you're looking for: 50cc or 125cc, your licence, your budget.",
+            },
+            {
+              step: "2",
+              title: "We find it",
+              text: "We search second-hand sites, check the scooter and do the paperwork. You track the status online.",
+            },
+            {
+              step: "3",
+              title: "Ride, then sell back",
+              text: "Ride it every day. When you graduate or move city, we buy it back.",
+            },
+          ].map((item) => (
+            <div key={item.step} className="rounded-2xl border border-stone-200 bg-white p-6">
+              <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 font-bold text-white">
+                {item.step}
+              </div>
+              <h3 className="text-lg font-bold">{item.title}</h3>
+              <p className="mt-1 text-stone-700">{item.text}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
