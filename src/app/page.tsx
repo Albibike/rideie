@@ -12,8 +12,8 @@ export default function Home() {
           Skip the metro. Skip the Uber. Ride to class.
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-stone-700">
-          Get your own 50cc or 125cc scooter. We find it, handle all the paperwork,
-          and buy it back when you graduate.
+          Get your own 50cc or 125cc scooter and reach class faster, on your own schedule.
+          We find it, handle all the paperwork, and buy it back when you graduate.
         </p>
         <Link
           href="/signup"
@@ -30,13 +30,32 @@ export default function Home() {
       </section>
 
       <section className="pb-14">
+        <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">The time you get back</h2>
+        <div className="grid gap-4 rounded-2xl bg-stone-900 p-6 text-center text-white sm:grid-cols-3">
+          {[
+            { value: "45 → 20 min", label: "metro vs scooter, each way" },
+            { value: "50 min", label: "saved every day" },
+            { value: "4 hours", label: "back every week" },
+          ].map((stat) => (
+            <div key={stat.label}>
+              <p className="text-3xl font-extrabold text-orange-400">{stat.value}</p>
+              <p className="mt-1 text-sm text-stone-300">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-2 text-center text-xs text-stone-500">
+          Based on a typical 45-minute metro commute to IE and our own daily rides across Madrid.
+        </p>
+      </section>
+
+      <section className="pb-14">
         <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight">Why ride?</h2>
         <div className="grid gap-4 sm:grid-cols-3">
           {[
             {
               icon: "🚇",
               title: "No more metro",
-              text: "45 minutes packed and sweaty, and you never know if you'll make it on time. On a scooter, you decide when you arrive.",
+              text: "45 minutes packed and sweaty, and you never know if you'll make it on time. On a scooter, you're in control: you decide when you leave and when you arrive.",
             },
             {
               icon: "🚕",

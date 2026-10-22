@@ -11,7 +11,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   title: "RideIE: skip the metro, skip the Uber, ride to IE",
   description:
-    "RideIE helps IE students get a scooter, paperwork included, so they skip metro and Uber and arrive on time.",
+    "RideIE helps IE students get a scooter, paperwork included, so they reach class faster and on their own terms.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

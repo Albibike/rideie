@@ -1,6 +1,6 @@
 # RideIE
 
-**RideIE helps IE students get a scooter, paperwork included, so they skip metro and Uber and arrive on time.**
+**RideIE helps IE students get a scooter, paperwork included, so they reach class faster and on their own terms.**
 
 Students commuting to IE University in Madrid often spend 45 minutes each way on a crowded, hot metro. RideIE lets them request a 50cc or 125cc scooter in 30 seconds. We find it on second-hand sites, handle the ownership paperwork and buy it back when they graduate.
 
